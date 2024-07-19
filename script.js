@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
+    // Add event listener to addButton
     addButton.addEventListener('click', addTask);
 
+    // Add event listener to taskInput for 'keypress' event
     taskInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             addTask();
