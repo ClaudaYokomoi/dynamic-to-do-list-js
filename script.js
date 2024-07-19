@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     addButton.addEventListener('click', addTask);
+
     taskInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             addTask();
